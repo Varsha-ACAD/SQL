@@ -1,0 +1,1 @@
+-- Question 7: Which were the songs released in April? Provide the track, artist names and release date.
