@@ -4,6 +4,9 @@
 -- or observe the data using the SQLite Viewer extension.
 
 -- Question 1: What tables are in this database?
+id, track_name, album_name, artist_names, release_date, duration_ms, popularity, added_by, added_at, 
+genres, record_label, danceability, energy, key, loudness, mode, speechiness,acousticness, 
+instrumentalness, liveness, valence, tempo, time_signature
 
 -- Question 2: What columns of data does the table contain?
 
