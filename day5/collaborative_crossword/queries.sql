@@ -10,7 +10,22 @@
 
 -- Across
 -- 2: The most recent clue ending with the word Cain! (4)
+-- select * 
+-- from crossword_clues 
+-- where clue like '%Cain' order by date desc limit 1;
+
+-- id      date       clue             word_length
+-- ------  ---------  ---------------  -----------
+-- 197929  9/29/2014  Brother of Cain  4  
+
+
 -- 3: This clue was the first alphabetical one for 6-letter words. (6)
+SELECT *
+FROM crossword_clues
+WHERE word_length = 6
+ORDER BY clue
+LIMIT 1;
+
 -- 7: A clue to a 3-letter word, appeared in NYT crosswords twice and ends with the word flush. (3)
 -- 8: The most frequently repeated clue containing the word Purple. (5)
 -- 10: The longest clue to a 6-letter word! (6)
