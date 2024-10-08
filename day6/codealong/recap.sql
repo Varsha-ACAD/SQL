@@ -2,11 +2,35 @@
 -- Single Table Selection
 -- Here, we will focus on the players & teams tables.
 
+.headers on
+.mode column
+
 -- 1. List all distinct team names from the Teams table.
+-- Select distinct name 
+-- from teams;
+
+
 -- 2. List the names of all players in alphabetical order.
+-- Select first_name, last_name
+-- from players
+-- order by first_name ASC;
+
 -- 3. Select the top 5 players based on batting averages.
+-- Select RBI
+-- from performances
+-- order by RBI DESC
+-- limit 5;
+
 -- 4. Count the number of players in each team.
+-- Select team_id, count(distinct player_id)
+-- from performances
+-- GROUP BY team_id;
+
 -- 5. Which teams have more than 10 players?
+-- select team_id, count(distinct player_id)
+-- from performances
+-- group by team_id
+-- having count(distinct player_id) > 10;
 
 -- Questions for Additional Practice
 -- LIMIT
@@ -25,6 +49,13 @@
 -- HAVING
 -- 13. Find teams with an average player age greater than 30.
 -- 14. Find positions with more than 5 players.
+
+--additional practice
+
+-- HAVING
+-- 13. Find teams with an average player age greater than 30.
+-- 14. Find positions with more than 5 players.
+
 
 
 
